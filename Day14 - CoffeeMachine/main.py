@@ -96,6 +96,7 @@ while continue_or_not == 1:
 
         if check_coin(item) == True:
             if check_resources(item) == True:
+                receive_coint(item)
                 deduce_resources(item)
                 change_amount = calculate_change(item)
                 print('Here is your '+item + '. Enjoy!')
